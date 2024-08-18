@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial: Estructuras de Control en JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <h1>Tutorial: Estructuras de Control en JavaScript</h1>
+
+    <p>Las estructuras de control son fundamentales en programación. Permiten tomar decisiones y controlar el flujo de ejecución de un programa. En JavaScript, tenemos varias estructuras de control importantes.</p>
+
+    <h2>1. if</h2>
+    <p>La estructura <code>if</code> permite ejecutar un bloque de código si una condición es verdadera.</p>
+    <div class="example">
+        <pre><code>let edad = 18;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+}
+</code></pre>
+    </div>
+
+    <h2>2. if-else</h2>
+    <p>La estructura <code>if-else</code> permite ejecutar un bloque de código si una condición es verdadera y otro bloque si es falsa.</p>
+    <div class="example">
+        <pre><code>let edad = 16;
+
+if (edad >= 18) {
+    console.log("Eres mayor de edad");
+} else {
+    console.log("Eres menor de edad");
+}
+</code></pre>
+    </div>
+
+    <h2>3. if-else if</h2>
+    <p>La estructura <code>if-else if</code> permite comprobar múltiples condiciones en secuencia.</p>
+    <div class="example">
+        <pre><code>let nota = 75;
+
+if (nota >= 90) {
+    console.log("Sobresaliente");
+} else if (nota >= 70) {
+    console.log("Notable");
+} else if (nota >= 50) {
+    console.log("Aprobado");
+} else {
+    console.log("Suspenso");
+}
+</code></pre>
+    </div>
+
+    <h2>4. switch</h2>
+    <p>La estructura <code>switch</code> permite ejecutar diferentes bloques de código basados en diferentes casos.</p>
+    <div class="example">
+        <pre><code>let diaSemana = 3;
+let nombreDia;
+
+switch (diaSemana) {
+    case 1:
+        nombreDia = "Lunes";
+        break;
+    case 2:
+        nombreDia = "Martes";
+        break;
+    case 3:
+        nombreDia = "Miércoles";
+        break;
+    case 4:
+        nombreDia = "Jueves";
+        break;
+    case 5:
+        nombreDia = "Viernes";
+        break;
+    case 6:
+    case 7:
+        nombreDia = "Fin de semana";
+        break;
+    default:
+        nombreDia = "Día inválido";
+}
+
+console.log(nombreDia); // Imprime: "Miércoles"
+</code></pre>
+    </div>
+
+    <p>Estas estructuras de control son esenciales para crear lógica en tus programas JavaScript. Practícalas para familiarizarte con su uso y aplicación en diferentes situaciones.</p>
+
+</body>
+</html>
